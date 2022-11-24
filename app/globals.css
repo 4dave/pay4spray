@@ -308,15 +308,17 @@ input:-webkit-autofill {
   }
 
   .form h1 {
-
-    /* font-size: 3.5rem; */
-    line-height: 0;
-    /* spread letters out */
-    letter-spacing: 0;
-
-
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
+    flex-wrap: wrap;
+    line-height: 3rem;
+  }
+
+  .form p {
+    font-size: 1rem;
+    text-align: center;
+    flex-wrap: wrap;
+    line-height: 1.5rem;
   }
 
   .section2-top h1, p {
