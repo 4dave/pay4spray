@@ -59,3 +59,13 @@ button:hover {
 .thanks {
   font-size: 2rem;
 }
+
+/* media query for mobile */
+@media (max-width: 680px) {
+  .formInput {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+}
