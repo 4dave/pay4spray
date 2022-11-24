@@ -105,7 +105,7 @@ video {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100vh;
   z-index: -1;
 }
 
@@ -187,6 +187,8 @@ input:-webkit-autofill {
 .section2-top h1 {
   font-size: 3rem;
   font-weight: 200;
+  margin-bottom: 1rem;
+  /* line-height: 3rem; */
 }
 
 .section2-top p {
@@ -289,4 +291,46 @@ input:-webkit-autofill {
   justify-content: flex-start;
   align-items: center;
   gap: .25rem;
+}
+
+/* media query for mobile */
+
+@media (max-width: 680px) {
+
+  .form-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .form h1 {
+
+    /* font-size: 3.5rem; */
+    line-height: 0;
+    /* spread letters out */
+    letter-spacing: 0;
+
+
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .section2-top h1, p {
+    text-align: center;
+    line-height: 3rem;
+  }
+
+  .section2-bottom {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .section3 {
+    flex-direction: column;
+    padding: 6rem 0;
+  }
 }
